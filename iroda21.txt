@@ -1,0 +1,15 @@
+vlan id 	neve 		megnevezés
+10		Dolgozók	Az itt dolgozók használják, akik csak dolgozói szinten vannak	
+20		Projekt vezető		Dolgozókra felügyel	
+30		Vendég			Ez azért kell hogyha jönnek hozzánk, segíteni akkor ebbe a vlanban legyenek benne
+40		Tulajdonos, rendszergazda		Ez a tulaj és a rendszergazda vlanja
+99		Felügyeleti		A rendszergazda felügyeleti vlanja	
+wifeloli
+
+vlan id 	ip cím		maszk
+10		192.168.10.0	255.255.255.192
+30		192.168.10.64	255.255.255.224
+40		192.168.10.96	255.255.255.240	
+99 		192.168.10.112  255.255.255.240
+20		192.168.10.128	255.255.255.248
+wififeloli	192.168.10.136 	255.255.255.248
